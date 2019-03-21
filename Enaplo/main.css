@@ -1,0 +1,225 @@
+body {
+    background-color: white;
+}
+
+#register_panel {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+#login_panel {
+    margin: auto;
+    text-align: center;
+    max-width: 300px;
+}
+
+.input_data  {
+    border-radius: 4px;
+    border: 1px solid #cccc;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#searchBox {
+    float: left;
+}
+
+.input_search  {
+    border-radius: 4px;
+    border: 1px solid #cccc;
+    width: 100px;
+    padding: 4px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+
+
+#LoginPass {
+    margin-bottom: 2px;
+}
+
+#RegisterSubmit, #LoginSubmit {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 45px;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    transition: all 0.5s;
+}
+
+#RegisterSubmit:hover, #LoginSubmit:hover {
+    color: #3642ea;
+}
+
+.MainSubmit {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 45px;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+.MainSubmit:hover {
+    color: #3642ea;
+}
+
+#forgotlabel {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-left: 3px;
+}
+
+.MainInputLabel {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.edit_student_font {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.login_font {
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    float: left;
+    margin-left: 3px;
+}
+/*dff*/
+
+.navbar
+{
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: opacity 0.3s linear;
+    z-index: 2;
+    letter-spacing: 1px;
+    height: 50px;
+    margin: 0;
+}
+
+.navbar .nav:hover
+{
+    color:  #3642ea;
+}
+
+.nav
+{
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 15px;
+    border-right: inset;
+    border-width: thin;
+    border-color: white;
+    line-height: 23px;
+    font-size: 17px;
+    vertical-align: middle;
+    text-decoration: none;
+    /*font-family: 'PT Sans Caption', sans-serif !important;*/
+    font-family: 'PT Sans Caption', sans-serif ;
+    margin-top: 13px;
+    transition: all 200ms linear;
+
+}
+
+.main_panel_container {
+    max-width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.main_table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+}
+
+.main_table th, .main_table td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+.main_table th {
+    background-color: black;
+    color: white;
+}
+
+.main_table tr:hover {
+   color: #3642ea;
+}
+
+.main_table tr:nth-child(even){
+    background-color: #ddd;
+}
+
+.inputDiv {
+    border-style: dotted;
+}
+
+.editButton {
+    color: white;
+    background-color: green;
+}
+
+.editButton:hover {
+    background-color: #46bb49;
+}
+
+.deleteButton {
+    color: white;
+    background-color: #bd0000;
+}
+
+.deleteButton:hover {
+    background-color: red;
+}
+
+.deleteButton, .editButton {
+    padding: 5px 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ModifyMessage {
+    color: white;
+    background-color: #29c044;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+
+

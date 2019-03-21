@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d279042-0635-4b3a-90ee-7d145267efeb" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="game@192.168.1.49" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="game@192.168.1.49" type="feb32156:DbDataSourceImpl" />
+        <item name="game: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="game@192.168.1.49" type="feb32156:DbDataSourceImpl" />
+        <item name="game: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="forgot: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="game@192.168.1.49" type="feb32156:DbDataSourceImpl" />
+        <item name="game: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="marks: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="game@192.168.1.49" type="feb32156:DbDataSourceImpl" />
+        <item name="game: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="subjects: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/editmark.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="157" />
+              <folding>
+                <marker date="1552948406561" expanded="true" signature="542:681" ph="UPDATE marks... " />
+                <marker date="1552948406561" expanded="true" signature="806:1107" ph="SELECT users... marks" />
+                <marker date="1552948406561" expanded="true" signature="806:1136" ph="SELECT users... marks" />
+                <marker date="1552948406561" expanded="true" signature="1543:1565" ph="SELECT * FRO... subjects" />
+                <marker date="1552948406561" expanded="true" signature="1612:1631" ph="SELECT * FRO... users" />
+                <marker date="1552948406561" expanded="true" signature="1736:1778" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/editsubject.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <marker date="1553118073306" expanded="true" signature="519:621" ph="UPDATE users... " />
+                <marker date="1553118073306" expanded="true" signature="723:771" ph="SELECT * FRO... subjects" />
+                <marker date="1553118073306" expanded="true" signature="1009:1062" ph="DELETE FROM " />
+                <marker date="1553118073306" expanded="true" signature="1100:1148" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/editstudent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <folding>
+                <marker date="1552948397798" expanded="true" signature="823:1038" ph="UPDATE users... " />
+                <marker date="1552948397798" expanded="true" signature="1137:1163" ph="SELECT * FRO... users" />
+                <marker date="1552948397798" expanded="true" signature="1137:1179" ph="SELECT * FRO... users" />
+                <marker date="1552948397798" expanded="true" signature="1680:1727" ph="DELETE FROM " />
+                <marker date="1552948397798" expanded="true" signature="1765:1807" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+              <folding>
+                <marker date="1552938364643" expanded="true" signature="512:576" ph="SELECT Usern... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Enaplo/students.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="291" />
+              <folding>
+                <marker date="1553098938068" expanded="true" signature="844:902" ph="SELECT count... users" />
+                <marker date="1553098938068" expanded="true" signature="1094:1348" ph="INSERT INTO users... " />
+                <marker date="1553098938068" expanded="true" signature="1532:1551" ph="SELECT * FRO... users" />
+                <marker date="1553098938068" expanded="true" signature="1532:1558" ph="SELECT * FRO... users" />
+                <marker date="1553098938068" expanded="true" signature="1532:1611" ph="SELECT * FRO... users" />
+                <marker date="1553098938068" expanded="true" signature="1532:1613" ph="SELECT * FRO... users" />
+                <marker date="1553098938068" expanded="true" signature="1672:1691" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/subjects.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="71" column="32" selection-start-line="70" selection-start-column="4" selection-end-line="71" selection-end-column="32" />
+              <folding>
+                <marker date="1552936859385" expanded="true" signature="439:533" ph="INSERT INTO marks... " />
+                <marker date="1552936859385" expanded="true" signature="595:612" ph="SELECT * FRO... sub" />
+                <marker date="1552936859385" expanded="true" signature="595:617" ph="SELECT * FRO... subjects" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enaplo/marks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="65" />
+              <folding>
+                <marker date="1552944584161" expanded="true" signature="318:332" ph="SELECT * FRO... marks" />
+                <marker date="1552944584161" expanded="true" signature="318:340" ph="SELECT * FRO... subjects" />
+                <marker date="1552944584161" expanded="true" signature="387:406" ph="SELECT * FRO... users" />
+                <marker date="1552944584161" expanded="true" signature="653:807" ph="INSERT INTO marks... " />
+                <marker date="1552944584161" expanded="true" signature="871:1075" ph="SELECT * FRO... marks" />
+                <marker date="1552944584161" expanded="true" signature="871:1092" ph="SELECT * FRO... marks" />
+                <marker date="1552944584161" expanded="true" signature="871:1125" ph="SELECT users... marks" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ad</find>
+      <find>subm</find>
+      <find>dis</find>
+      <find>input_da</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Enaplo/forgot.php" />
+        <option value="$PROJECT_DIR$/subjects.php" />
+        <option value="$PROJECT_DIR$/Enaplo/subjects.php" />
+        <option value="$PROJECT_DIR$/Enaplo/registration.php" />
+        <option value="$PROJECT_DIR$/Enaplo/login.php" />
+        <option value="$PROJECT_DIR$/Enaplo/index.php" />
+        <option value="$PROJECT_DIR$/Enaplo/marks.php" />
+        <option value="$PROJECT_DIR$/Enaplo/editstudent.php" />
+        <option value="$PROJECT_DIR$/Enaplo/editmark.php" />
+        <option value="$USER_HOME$/Desktop/teszt.php" />
+        <option value="$PROJECT_DIR$/Enaplo/students.php" />
+        <option value="$PROJECT_DIR$/Enaplo/editsubject.php" />
+        <option value="$PROJECT_DIR$/Enaplo/main.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="151" />
+    <option name="y" value="-10" />
+    <option name="width" value="1311" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="enaplo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enaplo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enaplo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enaplo" type="462c0819:PsiDirectoryNode" />
+              <item name="Enaplo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d279042-0635-4b3a-90ee-7d145267efeb" name="Default" comment="" />
+      <created>1552831174332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552831174332</updated>
+      <workItem from="1552831175689" duration="13979000" />
+      <workItem from="1552851905857" duration="5835000" />
+      <workItem from="1552900811612" duration="22823000" />
+      <workItem from="1553022437357" duration="1495000" />
+      <workItem from="1553098534381" duration="1937000" />
+      <workItem from="1553118029007" duration="11000" />
+      <workItem from="1553118060009" duration="110000" />
+      <workItem from="1553118321048" duration="210000" />
+      <workItem from="1553118613197" duration="229000" />
+      <workItem from="1553161385393" duration="1102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47731000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1130064" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="8" sideWeight="0.80597013" visible="true" weight="0.2777778" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19402985" side_tool="true" visible="true" weight="0.2777778" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.16151386" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24973147" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="1" visible="true" weight="0.32900944" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Remote Host" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Enaplo/forgot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects.php" />
+    <entry file="das://table:/3d672bbd/d522a42c-eeaa-48a3-882e-04c35ff28546/game.marks">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d522a42c-eeaa-48a3-882e-04c35ff28546/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/logout.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" selection-start-line="28" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1552937227971" expanded="true" signature="875:933" ph="SELECT count... users" />
+            <marker date="1552937227971" expanded="true" signature="1635:1775" ph="INSERT INTO users... " />
+            <marker date="1552937227971" expanded="true" signature="1635:1861" ph="INSERT INTO users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/teszt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/editsubject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <marker date="1553118073306" expanded="true" signature="519:621" ph="UPDATE users... " />
+            <marker date="1553118073306" expanded="true" signature="723:771" ph="SELECT * FRO... subjects" />
+            <marker date="1553118073306" expanded="true" signature="1009:1062" ph="DELETE FROM " />
+            <marker date="1553118073306" expanded="true" signature="1100:1148" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <marker date="1552938364643" expanded="true" signature="512:576" ph="SELECT Usern... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/subjects.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="32" selection-start-line="70" selection-start-column="4" selection-end-line="71" selection-end-column="32" />
+          <folding>
+            <marker date="1552936859385" expanded="true" signature="439:533" ph="INSERT INTO marks... " />
+            <marker date="1552936859385" expanded="true" signature="595:612" ph="SELECT * FRO... sub" />
+            <marker date="1552936859385" expanded="true" signature="595:617" ph="SELECT * FRO... subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/marks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <marker date="1552944584161" expanded="true" signature="318:332" ph="SELECT * FRO... marks" />
+            <marker date="1552944584161" expanded="true" signature="318:340" ph="SELECT * FRO... subjects" />
+            <marker date="1552944584161" expanded="true" signature="387:406" ph="SELECT * FRO... users" />
+            <marker date="1552944584161" expanded="true" signature="653:807" ph="INSERT INTO marks... " />
+            <marker date="1552944584161" expanded="true" signature="871:1075" ph="SELECT * FRO... marks" />
+            <marker date="1552944584161" expanded="true" signature="871:1092" ph="SELECT * FRO... marks" />
+            <marker date="1552944584161" expanded="true" signature="871:1125" ph="SELECT users... marks" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/editmark.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="157" />
+          <folding>
+            <marker date="1552948406561" expanded="true" signature="542:681" ph="UPDATE marks... " />
+            <marker date="1552948406561" expanded="true" signature="806:1107" ph="SELECT users... marks" />
+            <marker date="1552948406561" expanded="true" signature="806:1136" ph="SELECT users... marks" />
+            <marker date="1552948406561" expanded="true" signature="1543:1565" ph="SELECT * FRO... subjects" />
+            <marker date="1552948406561" expanded="true" signature="1612:1631" ph="SELECT * FRO... users" />
+            <marker date="1552948406561" expanded="true" signature="1736:1778" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/editstudent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <marker date="1552948397798" expanded="true" signature="823:1038" ph="UPDATE users... " />
+            <marker date="1552948397798" expanded="true" signature="1137:1163" ph="SELECT * FRO... users" />
+            <marker date="1552948397798" expanded="true" signature="1137:1179" ph="SELECT * FRO... users" />
+            <marker date="1552948397798" expanded="true" signature="1680:1727" ph="DELETE FROM " />
+            <marker date="1552948397798" expanded="true" signature="1765:1807" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enaplo/students.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="291" />
+          <folding>
+            <marker date="1553098938068" expanded="true" signature="844:902" ph="SELECT count... users" />
+            <marker date="1553098938068" expanded="true" signature="1094:1348" ph="INSERT INTO users... " />
+            <marker date="1553098938068" expanded="true" signature="1532:1551" ph="SELECT * FRO... users" />
+            <marker date="1553098938068" expanded="true" signature="1532:1558" ph="SELECT * FRO... users" />
+            <marker date="1553098938068" expanded="true" signature="1532:1611" ph="SELECT * FRO... users" />
+            <marker date="1553098938068" expanded="true" signature="1532:1613" ph="SELECT * FRO... users" />
+            <marker date="1553098938068" expanded="true" signature="1672:1691" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

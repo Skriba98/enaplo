@@ -4,6 +4,7 @@
  * User: Skriba
  * Date: 2019. 03. 17.
  * Time: 15:45
+ teszt
  */
 include "config.php";
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());

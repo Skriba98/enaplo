@@ -6,20 +6,23 @@
  * Time: 15:45
  */
 include "config.php";
+
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
 
 //Felhasználó felvétele
-$InputOM = $_POST["InputOM"];
-$Input_Email = $_POST["InputEmail"];
-$InputPassword1 = $_POST["InputPassword1"];
-$InputPassword2 = $_POST["InputPassword2"];
-$InputSurname = $_POST["InputSurname"];
-$InputLastname = $_POST["InputLastname"];
-$InputBirthdate = $_POST["InputBirthdate"];
-$InputClass1 = $_POST["InputClass1"];
-$InputClass2 = $_POST["InputClass2"];
+$InputOM = mysqli_real_escape_string($MySQL_connect,$_POST["InputOM"]);
+$Input_Email = mysqli_real_escape_string($MySQL_connect,$_POST["InputEmail"]);
+$InputPassword1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword1"]);
+$InputPassword2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword2"]);
+$InputSurname = mysqli_real_escape_string($MySQL_connect,$_POST["InputSurname"]);
+$InputLastname = mysqli_real_escape_string($MySQL_connect, $_POST["InputLastname"]);
+$InputBirthdate = mysqli_real_escape_string($MySQL_connect,$_POST["InputBirthdate"]);
+$InputClass1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass1"]);
+$InputClass2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass2"]);
 $isSend = $_POST["isSend"];
 $InputClass = $InputClass1 . '/' . $InputClass2;
+
+//Alapértelmezett jelszó
 $ShaPassword = sha1("valami");
 $err_msg = "";
 $used = 0;
@@ -55,12 +58,7 @@ else {
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="navbar">
-    <a class="nav" href="">Főoldal</a>
-    <a class="nav" href="students.php">Tanulók</a>
-    <a class="nav" href="subjects.php">Tantárgyak</a>
-    <a class="nav" href="marks.php">Osztályzatok</a>
-</div>
+<?php include "navbar.php"; ?>
 <div class="main_panel_container">
     <h1>Tanulók</h1>
 <div id="searchBox">

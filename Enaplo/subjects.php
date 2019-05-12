@@ -6,10 +6,11 @@
  * Time: 22:22
  */
 include "config.php";
+
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
 //Insert
-$inputSubject = $_POST["inputSubject"];
-$inputTeacher = $_POST["inputTeacher"];
+$inputSubject = mysqli_real_escape_string($MySQL_connect,$_POST["inputSubject"]);
+$inputTeacher = mysqli_real_escape_string($MySQL_connect,$_POST["inputTeacher"]);
 $isSend = $_POST["isSend"];
 
 if ($isSend) {
@@ -21,6 +22,7 @@ $DBsubjectData = mysqli_query($MySQL_connect,"SELECT * FROM subjects");
 
 ?>
 
+
 <html>
 <head>
     <link href="main.css?V=<?php echo rand();?>" type="text/css" rel="stylesheet"/>
@@ -28,12 +30,7 @@ $DBsubjectData = mysqli_query($MySQL_connect,"SELECT * FROM subjects");
     <title>Tantárgyak</title>
 </head>
 <body>
-<div class="navbar">
-    <a class="nav" href="">Főoldal</a>
-    <a class="nav" href="students.php">Tanulók</a>
-    <a class="nav" href="subjects.php">Tantárgyak</a>
-    <a class="nav" href="marks.php" style="border-right: hidden">Osztályzatok</a>
-</div>
+<?php include "navbar.php"; ?>
 <div class="main_panel_container">
     <h1>Tantárgyak</h1>
     <table class="main_table">

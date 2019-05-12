@@ -8,16 +8,16 @@
 //Felhasználó regisztrálása
 $is_error = false;
 $err_msg = '';
-$InputOM = $_POST["InputOM"];
-$Input_Email = $_POST["InputEmail"];
-$InputPassword1 = $_POST["InputPassword1"];
-$InputPassword2 = $_POST["InputPassword2"];
-$InputSurname = $_POST["InputSurname"];
-$InputLastname = $_POST["InputLastname"];
-$InputBirthdate = $_POST["InputBirthdate"];
-$InputClass1 = $_POST["InputClass1"];
-$InputClass2 = $_POST["InputClass2"];
-$SendReg = $_POST["SendReg"];
+$InputOM = mysqli_real_escape_string($MySQL_connect,$_POST["InputOM"]);
+$Input_Email = mysqli_real_escape_string($MySQL_connect,$_POST["InputEmail"]);
+$InputPassword1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword1"]);
+$InputPassword2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword2"]);
+$InputSurname = mysqli_real_escape_string($MySQL_connect,$_POST["InputSurname"]);
+$InputLastname = mysqli_real_escape_string($MySQL_connect,$_POST["InputLastname"]);
+$InputBirthdate = mysqli_real_escape_string($MySQL_connect,$_POST["InputBirthdate"]);
+$InputClass1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass1"]);
+$InputClass2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass2"]);
+$SendReg = mysqli_real_escape_string($MySQL_connect,$_POST["SendReg"]);
 $InputClass = $InputClass1 . '/' . $InputClass2;
 echo $InputClass;
 //mysql beállítása

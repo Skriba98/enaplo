@@ -6,16 +6,17 @@
  * Time: 14:58
  */
 include "config.php";
+
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
 $DBsubjectData = mysqli_query($MySQL_connect,"SELECT * FROM subjects");
 $DBuserData = mysqli_query($MySQL_connect,"SELECT * FROM users");
 
 //Insert data
-$inputUserId = $_POST["inputUserId"];
-$inputSubjectId = $_POST["inputSubjectId"];
-$inputMark = $_POST["inputMark"];
-$inputDate = $_POST["inputDate"];
-$isSend = $_POST["isSend"];
+$inputUserId = mysqli_real_escape_string($MySQL_connect,$_POST["inputUserId"]);
+$inputSubjectId = mysqli_real_escape_string($MySQL_connect,$_POST["inputSubjectId"]);
+$inputMark = mysqli_real_escape_string($MySQL_connect,$_POST["inputMark"]);
+$inputDate = mysqli_real_escape_string($MySQL_connect,$_POST["inputDate"]);
+$isSend = mysqli_real_escape_string($MySQL_connect,$_POST["isSend"]);
 
 if ($isSend) {
     mysqli_query($MySQL_connect, "INSERT INTO marks (Mark, Subject_id, User_id, Date) VALUES ('" . $inputMark . "', '" . $inputSubjectId . "', '" . $inputUserId . "', '" . $inputDate . "')");
@@ -38,12 +39,7 @@ $DBmarkData = mysqli_query($MySQL_connect,"SELECT users.Surname as Surname, user
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="nav" href="">Főoldal</a>
-        <a class="nav" href="students.php">Tanulók</a>
-        <a class="nav" href="subjects.php">Tantárgyak</a>
-        <a class="nav" href="marks.php">Osztályzatok</a>
-    </div>
+<?php include "navbar.php"; ?>
     <div class="main_panel_container">
         <h1>Osztályzatok</h1>
         <table class="main_table">

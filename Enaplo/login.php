@@ -10,12 +10,13 @@
 $is_error = 0;
 $err_msg = '';
 $SendReg = $_POST["SendReg"];
-$InputUserName = $_POST["input_username"];
-$InputPassword = $_POST["input_password"];
+
 //mysql beállítása
 include "config.php";
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
 
+$InputUserName = mysqli_real_escape_string($MySQL_connect,$_POST["input_username"]);
+$InputPassword = mysqli_real_escape_string($MySQL_connect,$_POST["input_password"]);
 
 //Felhasználónév ellenőrzése
 
@@ -37,9 +38,10 @@ else {
 }
 
 if($is_error == 0) {
+    session_start();
     $_SESSION["username"] = $username;
     $_SESSION["userid"] = $userid;
-    header("Location: index.php");
+    header("Location: user.php");
 }
 
 if (!$SendReg)

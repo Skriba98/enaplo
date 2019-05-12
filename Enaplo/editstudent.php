@@ -10,18 +10,20 @@ $UserId = $_GET["id"];
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
 
 //Módosítás
-$InputOM = $_POST["InputOM"];
-$InputEmail = $_POST["InputEmail"];
-$InputPassword1 = $_POST["InputPassword1"];
-$InputPassword2 = $_POST["InputPassword2"];
-$InputSurname = $_POST["InputSurname"];
-$InputLastname = $_POST["InputLastname"];
-$InputBirthdate = $_POST["InputBirthdate"];
-$InputClass1 = $_POST["InputClass1"];
-$InputClass2 = $_POST["InputClass2"];
-$InputClass = $_POST["InputClass1"] . "/" . $_POST["InputClass2"];
-$isSend = $_POST["isSend"];
+$InputOM = mysqli_real_escape_string($MySQL_connect,$_POST["InputOM"]);
+$InputEmail = mysqli_real_escape_string($MySQL_connect,$_POST["InputEmail"]);
+$InputPassword1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword1"]);
+$InputPassword2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputPassword2"]);
+$InputSurname = mysqli_real_escape_string($MySQL_connect,$_POST["InputSurname"]);
+$InputLastname = mysqli_real_escape_string($MySQL_connect,$_POST["InputLastname"]);
+$InputBirthdate = mysqli_real_escape_string($MySQL_connect,$_POST["InputBirthdate"]);
+$InputClass1 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass1"]);
+$InputClass2 = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass2"]);
+$InputClass = mysqli_real_escape_string($MySQL_connect,$_POST["InputClass1"] . "/" . $_POST["InputClass2"]);
+$isSend = mysqli_real_escape_string($MySQL_connect,$_POST["isSend"]);
 $message = "";
+//echo "<br><br><br><br><br>" . $InputLastname;
+
 if ($isSend) {
     mysqli_query($MySQL_connect, "UPDATE users SET OM = '".$InputOM."', Class = '".$InputClass."', Email = '".$InputEmail."', Surname = '".$InputSurname."', Lastname = '".$InputLastname."', Birthdate = '".$InputBirthdate."'  WHERE Id = '".$UserId."'");
     $message = "Sikeres módosítás";
@@ -57,12 +59,7 @@ if ($isDelete == "true") {
 </head>
 
 <body>
-<div class="navbar">
-    <a class="nav" href="">Főoldal</a>
-    <a class="nav" href="students.php">Tanulók</a>
-    <a class="nav" href="subjects.php">Tantárgyak</a>
-    <a class="nav" href="marks.php">Osztályzatok</a>
-</div>
+<?php include "navbar.php"; ?>
 <div class="main_panel_container">
     <h1>Tanuló adatainak módosítása</h1>
     <?php if($message != '') echo '<span class="ModifyMessage"> '.$message.' </span>'; ?>

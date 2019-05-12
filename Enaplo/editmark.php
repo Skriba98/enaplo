@@ -6,15 +6,16 @@
  * Time: 17:06
  */
 include "config.php";
-$markId = $_GET["id"];
+
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
+$markId = mysqli_real_escape_string($MySQL_connect,$_GET["id"]);
 
 //Módosítás
-$InputStudentId = $_POST["inputStudentId"];
-$InputSubjectId = $_POST["inputSubjectId"];
-$InputMark = $_POST["inputMark"];
-$InputDate = $_POST["inputDate"];
-$isSend = $_POST["isSend"];
+$InputStudentId = mysqli_real_escape_string($MySQL_connect,$_POST["inputStudentId"]);
+$InputSubjectId = mysqli_real_escape_string($MySQL_connect,$_POST["inputSubjectId"]);
+$InputMark = mysqli_real_escape_string($MySQL_connect,$_POST["inputMark"]);
+$InputDate = mysqli_real_escape_string($MySQL_connect,$_POST["inputDate"]);
+$isSend = mysqli_real_escape_string($MySQL_connect,$_POST["isSend"]);
 
 if ($isSend) {
     mysqli_query($MySQL_connect, "UPDATE marks SET Subject_id = '".$InputSubjectId."', User_id = '".$InputStudentId."', Mark = '".$InputMark."'  WHERE marks.Id='".$markId."'");
@@ -57,12 +58,7 @@ if ($isDelete == "true") {
 </head>
 
 <body>
-<div class="navbar">
-    <a class="nav" href="">Főoldal</a>
-    <a class="nav" href="students.php">Tanulók</a>
-    <a class="nav" href="subjects.php">Tantárgyak</a>
-    <a class="nav" href="marks.php">Jegyek</a>
-</div>
+<?php include "navbar.php"; ?>
 <div class="main_panel_container">
     <h1>Osztályzat módosítása</h1>
     <form action="" method="post">

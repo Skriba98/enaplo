@@ -6,12 +6,13 @@
  * Time: 17:22
  */
 include "config.php";
-$subjectId = $_GET["id"];
+
 $MySQL_connect = mysqli_connect($MySQL_host, $MySQL_username, $MySQL_password, $MySQL_database) or die("MySQL kapcsolódási hiba: " . mysqli_connect_error());
+$subjectId = mysqli_real_escape_string($MySQL_connect,$_GET["id"]);
 
 //Módosítás
 $InputName = mysqli_real_escape_string($MySQL_connect,$_POST["InputName"]);
-$InputTeacher = $_POST["InputTeacher"];
+$InputTeacher = mysqli_real_escape_string($MySQL_connect,$_POST["InputTeacher"]);
 $isSend = $_POST["isSend"];
 $message = "";
 if ($isSend) {
@@ -45,12 +46,7 @@ if ($isDelete == "true") {
 
 
 <body>
-<div class="navbar">
-    <a class="nav" href="">Főoldal</a>
-    <a class="nav" href="students.php">Tanulók</a>
-    <a class="nav" href="subjects.php">Tantárgyak</a>
-    <a class="nav" href="marks.php">Osztályzatok</a>
-</div>
+<?php include "navbar.php"; ?>
 <div class="main_panel_container">
     <h1>Tantárgy adatainak módosítása</h1>
     <?php if($message != '') echo '<span class="ModifyMessage"> '.$message.' </span>'; ?>
